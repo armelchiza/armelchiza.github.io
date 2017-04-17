@@ -7,32 +7,33 @@
    <title>Fill Number</title>
    <link rel="stylesheet" href="color.css">
 
-   <script>
-     var b; //body
-     var init = function () {
-         b = document.getElementById("b");
-         b.innerHTML = "bonjour";
-	 };
+
+
+
+<!DOCTYPE html>
+<html>
+ <head> 
+
+ 	<meta charset="UTF-8">
+ 	<title>Fill Number</title>
+ 	<link rel="stylesheet" href="color.css">
+
+ 	<script>
      var clic = function () {
-         b.innerHTML = "*" + b.innerHTML + "*";
-     }; 
-   </script>
+         var nom = document.getElementById("nom").value;
+         if (document.getElementById("sexe").value == "M") {
+             alert("Hello Mr " + nom);
+         } else {
+             alert("Hello Ms " + nom);
+         }
+	 };
+    </script>
 
  </head>
  <body>
-   <body id="b" onload="init();" onclick="clic();"></body>
-   <em>Name</em> : <br> <textarea></textarea> <br> <br>
-
-   <p>
-   Phone number : <br> <textarea></textarea> <br> <br>
-   </p>
-
-
-   <select>
-     <option>Male</option>
-     <option>Female</option>
-   </select>
-   <br> <br>
-   <button>OK</button>
+   Name: <textarea id="nom"></textarea> <br><br><br>
+   <select id="sexe"> <option>M</option> <option>F</option> </select>
+   <button onclick="clic();">OK<button>
  </body>
 </html>
+
