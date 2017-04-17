@@ -2,12 +2,25 @@
 
 <html>
  <head>
+
    <meta charset="UTF-8">
    <title>Fill Number</title>
    <link rel="stylesheet" href="color.css">
+
+   <script>
+     var b; //body
+     var init = function () {
+         b = document.getElementById("b");
+         b.innerHTML = "bonjour";
+	 };
+     var clic = function () {
+         b.innerHTML = "*" + b.innerHTML + "*";
+     }; 
+   </script>
+
  </head>
  <body>
-   
+   <body id="b" onload="init();" onclick="clic();"></body>
    <em>Name</em> : <br> <textarea></textarea> <br> <br>
 
    <p>
