@@ -1,53 +1,82 @@
-<!DOCTYPE html>
+<!-- <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exploding Kittens IV, the Nyan Army</title>
+</head>
+<body background = "sky.jpg">
+    <div id="app" align = "center">
 
-<html>
- <head>
 
+      KEYS :
+
+    </div>
+
+
+    <audio autoplay>
+      <source src="music/sparta.mp3">
+    </audio>
+
+    <script src="js/kittens.js"></script>
+</body>
+</html> -->
+
+
+<!doctype html>
+<html lang="en">
+<head>
    <meta charset="UTF-8">
-   <title>Fill Number</title>
-   <link rel="stylesheet" href="color.css">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Exploding Kittens</title>
+<style>
+*{
+ margin:0px;
+ padding:0px;
+}
 
- <head> 
-
- 	<meta charset="UTF-8">
- 	<title>Fill Number</title>
- 	<link rel="stylesheet" href="color.css">
-
- 	<script>
-     var clic = function () {
-         var nom = document.getElementById("nom").value;
-         if (document.getElementById("sexe").value == "M") {
-             alert("Hello Mr " + nom);
-         } else {
-             alert("Hello Ms " + nom);
-         }
-	 };
-    </script>
-
- </head>
-
- <body>
- 	  
-    <p>
- 	  This is a paragraph about things and stuff DALSJNDLFNSLJFNASJLFNAS
-    </p>
-
-    <p>
-
-      
-    VIN ET FROMAGE
+h2{
+ /*margin-top:20px;*/
+ font-family: Arial;
+ font-size:50px;
+ color: white;
+ text-align: center;
+ text-shadow: 3px 2px #0779ad ;
+ margin: 5px;
+}
+.controls{
+ height:70px;
+ width:300px;
+ margin-top:5px;
+ padding: 5px;
+ background-color: blue;
+ border-radius:5px;
+ font-family: Arial;
+ text-align:center;
+ font-size:15px;
+ color: black;
+}
 
 
-    </p>
+</style>
+</head>
 
-    Name: <textarea id="nom"></textarea> <br><br><br>
-    <select id="sexe"> 
-   	<option>M</option> 
-   	<option>F</option> 
-    </select>
-    <button onclick="clic();">OK<button>
- </body>
-
- 
+<body background = "sky.jpg">
+<center>
+ <h2>Nyan Cat Game</h2>
+ <div id="app"></div>
+ <div class = "controls">
+   <strong><p>CONTROLS</p>
+   <p>LEFT/down ARROWs = MOVE
+   </p>
+   <p> > some bullets will miss the target ;) <
+   </p>
+   <p>UP ARROW = SHOOT</p></strong>
+ </div>
+</center>
+ <audio autoplay>
+   <source src="music/sparta.mp3">
+ </audio>
+ <script src="js/kittens.js"></script>
+</body>
 </html>
-
