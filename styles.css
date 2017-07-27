@@ -1,0 +1,395 @@
+/* Box-sizing fix! */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Utility classes */
+.responsive-img {
+  max-width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+
+
+
+
+/*_____________ HEADER _______________*/
+
+h1{
+  font-family: 'Indie Flower', cursive;
+  font-size:100px;
+}
+.dot{
+  color: #d3d3d3;
+}
+header{
+  height:800px;
+  width:100%;
+  margin-top: 30px;
+  border-top: solid 5px;
+  border-color: #554468;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:left;
+  background-image:url(http://www.wallpaperup.com/uploads/wallpapers/2014/03/29/313501/1a1837d95903ac5f6f4cf07d9d1693b7.jpg);
+  color: white;
+}
+.moveText{
+  margin-left:100px;
+}
+.description {
+  font-family: 'Lemonada', cursive;
+  font-size:12px;
+  color:white;
+  text-shadow: 2px 2px black;
+}
+.social-icons, .main-section {
+  display: flex;
+}
+.social-icon {
+  margin: 0 0.3em; /* This sets the margin to 0 for top and bottom, and 0.3em for left and right.*/
+  background-color:  white;
+  color: black;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/*_____________ MAIN BODY _______________*/
+.sections{
+    padding: 300px 0 300px 0;
+    background-color: #d3d3d3;
+    display:flex;
+    justify-content: space-around;
+}
+
+.button{
+  display:flex;
+  flex-direction: column;
+  align-content:space-around;
+  align-items:center;
+  text-align:center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.button i{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7rem;
+  border-radius:50%;
+  color:white;
+  background-color: #554468;
+  width:10rem;
+  height:10rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.b{
+  font-size: 2rem;
+}
+
+/*_____________ NOTIFICATION _______________*/
+
+.notification{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(http://i.imgur.com/CbDWE5A.jpg);
+  height:1400px;
+  padding: 500px 50px 500px 50px;
+}
+.notification p{
+  font-size: 20px;
+  color: white;
+  padding-bottom: 10px;
+}
+.notification h2{
+  font-size: 40px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+form{
+  border:none;
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+}
+button{
+  background:blue;
+  color:white;
+  font-family: sans-serif;
+  border:none;
+  font-size: 2rem;
+  padding-top:2%;
+  padding-bottom:2%;
+  padding-left:7%;
+  padding-right: 7%;
+  border-top-right-radius:10px ;
+  border-bottom-right-radius:10px;
+  margin-left: 0;
+}
+button:hover{
+  background-color: black;
+}
+
+/*_____________ CONTACT INFO _______________*/
+.quote{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Anton', cursive;
+  text-align:center;
+}
+.resize {
+    width: 100px;
+    height: auto;
+    padding: 5px;
+}
+.others{
+  list-style:none;
+  display:flex;
+  justify-content: center;
+}
+
+.social{
+  display:flex;
+  justify-content: center;
+  list-style:none;
+}
+
+.social i{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50%;
+  color:white;
+  background-color: black;
+  width:50px;
+  height:50px;
+  margin:5px;
+}
+
+.social i:hover{
+  background-color: #554468;
+}
+
+/*_____________ FOOTER _______________*/
+
+footer{
+  background:#e5e5e5;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer ul{
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width:100%;
+}
+
+footer ul li:hover{
+  background-color: yellow;
+}
+
+
+
+
+/*_______________________ RESPONSIVE _______________________*/
+/*__________________________________________________________*/
+
+
+
+
+/* Grid system! */
+.row {
+    max-width: 2500px; /* used to be 1000 !!! */
+    margin: 0 auto;
+    display: flex; /* This will allow our row to display columns horizontally */
+    align-items: flex-start;
+    flex-wrap: wrap; /* This will become necessary to allow our flex boxes to stack in responsive mode */
+}
+
+/* Small and up columns */
+
+/* If an element needs all twelve columns, then its width is 100%. Easy. */
+.col-small-12 {
+    width: 100%;
+}
+/* If an element needs 11 of 12 columns, its width is 11/12 * 100% */
+.col-small-11 {
+    width: 91.666%;
+}
+.col-small-10 {
+    width: 83.333%;
+}
+.col-small-9 {
+    width: 75%;
+}
+.col-small-8 {
+    width: 66.666%;
+}
+.col-small-7 {
+    width: 58.333%;
+}
+/* This is the class we'd use if we want two 50/50 elements next to each other */
+.col-small-6 {
+    width: 50%;
+}
+.col-small-5 {
+    width: 41.666%;
+}
+/* This is the class we'd use if we want three elements next to each other */
+.col-small-4 {
+    width: 33.333%;
+}
+/* This is the class we'd use if we want four elements next to each other */
+.col-small-3 {
+    width: 25%;
+}
+.col-small-2 {
+    width: 16.666%;
+}
+/* We'll almost NEVER use this */
+.col-small-1 {
+    width: 8.333%;
+}
+
+/* Medium and up screen sizes */
+@media only screen and (min-width: 1000px) { /* used to be 641 */
+  .col-medium-12 {
+      width: 100%;
+  }
+  /* If an element needs 11 of 12 columns, its width is 11/12 * 100% */
+  .col-medium-11 {
+      width: 91.666%;
+  }
+  .col-medium-10 {
+      width: 83.333%;
+  }
+  .col-medium-9 {
+      width: 75%;
+  }
+  .col-medium-8 {
+      width: 66.666%;
+  }
+  .col-medium-7 {
+      width: 58.333%;
+  }
+  /* This is the class we'd use if we want two 50/50 elements next to each other */
+  .col-medium-6 {
+      width: 50%;
+  }
+  .col-medium-5 {
+      width: 41.666%;
+  }
+  /* This is the class we'd use if we want three elements next to each other */
+  .col-medium-4 {
+      width: 33.333%;
+  }
+  /* This is the class we'd use if we want four elements next to each other */
+  .col-medium-3 {
+      width: 25%;
+      background-color: yellow;
+  }
+  .col-medium-2 {
+      width: 16.666%;
+  }
+  /* We'll almost NEVER use this */
+  .col-medium-1 {
+      width: 8.333%;
+  }
+
+}
+
+
+
+
+/* Large screen sizes */
+@media only screen and (min-width: 1500px) { /* used to be 1025 */
+  .col-large-12 {
+      width: 100%;
+  }
+  /* If an element needs 11 of 12 columns, its width is 11/12 * 100% */
+  .col-large-11 {
+      width: 91.666%;
+  }
+  .col-large-10 {
+      width: 83.333%;
+  }
+  .col-large-9 {
+      width: 75%;
+  }
+  .col-large-8 {
+      width: 66.666%;
+  }
+  .col-large-7 {
+      width: 58.333%;
+  }
+  /* This is the class we'd use if we want two 50/50 elements next to each other */
+  .col-large-6 {
+      width: 50%;
+  }
+  .col-large-5 {
+      width: 41.666%;
+  }
+  /* This is the class we'd use if we want three elements next to each other */
+  .col-large-4 {
+      width: 33.333%;
+      background-color: blue;
+  }
+  /* This is the class we'd use if we want four elements next to each other */
+  .col-large-3 {
+      width: 25%;
+  }
+  .col-large-2 {
+      width: 16.666%;
+  }
+  /* We'll almost NEVER use this */
+  .col-large-1 {
+      width: 8.333%;
+  }
+
+}
+
+/* video CSS ===================================== */
+
+.responsive-video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /*makes up for lack of height*/
+  position: relative;
+}
+/*now target the iframe*/
+
+.responsive-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* responsive video */
+@media only screen and (max-width: 1000px){
+
+  .section-two:nth-of-type(2) {
+      order: 1
+  }
+
+  .section-two:nth-of-type(1) {
+      order: 2
+  }
+}
